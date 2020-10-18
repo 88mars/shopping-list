@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    border: 20px solid #fff;
+    background-color:#383d43 ;
+    background: #3b3f45;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', Trebuchet, Arial, sans-serif;
+    
+}
+
+header, footer{
+    background-color: #4a4f56;
+    padding: 15px;
+    text-align: center;
+    color: #eb7e7f;
+}
+
+header h1{
+    margin: 0 0 10px 0;
+    font-size: 42px;
+
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+ul li {
+    background-color: #88839e;
+    transition: all .3s ease-in-out; 
+    border-top: 4px solid transparent ;
+    border-bottom: 4px solid transparent ;
+}
+
+ul li:nth-child(even) {
+    background-color: #7a7593;
+}
+
+ul li:hover {
+    background-color: #625e77;
+    border-top: 4px solid #fff;
+    border-color: #ffffff;
+   
+}
+
+ul li :focus,
+ul li :active {
+    background-color: #eb7e7f;
+
+}
+
+label {
+    padding: 15px;
+    display: block;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+    
+}
+
+input[type="checkbox"] {
+    transform: scale(1.4);
+    margin-right: 10px;
+}
+
+small {
+    opacity: .6;
+}
+
+small:not(:empty)::before {
+    content: '(';
+}
+
+small:not(:empty)::after {
+    content: ')';
+}
+
+input[type="checkbox"]:checked + * {
+    text-decoration: line-through;
+}
